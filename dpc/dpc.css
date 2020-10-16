@@ -1,0 +1,143 @@
+.dpc-points {
+	margin-top: 75px;
+	display: grid;
+	grid-template-columns: 260px repeat(4, 1fr);
+	grid-column-gap: 20px;
+	grid-row-gap: 40px;
+}
+
+.grid-title {
+	grid-row: span 2;
+}
+
+.dpc-schedule {
+	display: grid;
+	grid-template-columns: 260px 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 20px;
+}
+
+.dpc-schedule p {
+	margin-bottom: 0;
+}
+
+.dpc-schedule .grid-title {
+	grid-row: span 26;
+}
+
+.dpc-schedule .live p {
+	font-weight: initial;
+}
+
+.major {
+	display: grid;
+	grid-template-columns: 3fr repeat(4, 2fr);
+	grid-column-gap: 10px;
+	font-size: 20px;
+	line-height: 22px;
+	color: #00BFAD;
+	border-top: solid 1px #333;
+	padding-top: 5px;
+}
+
+.major:hover, .minor:hover {
+	border-top: solid 1px #00BFAD;
+}
+
+.major.played {
+	color: rgba(255, 201, 0, .6) !important;
+}
+
+.major p {
+	font-size: 14px;
+}
+
+.minor {
+	display: grid;
+	grid-template-columns: 3fr repeat(4, 2fr);
+	grid-column-gap: 10px;
+	font-size: 14px;
+	line-height: 20px;
+	border-top: solid 1px #333;
+	padding-top: 3px;
+}
+
+.first-place {
+	font-size: 20px;
+}
+
+.second-place {
+	font-size: 18px;
+}
+
+.third-place {
+	font-size: 17px;
+}
+
+.fourth-place {
+	font-size: 16px;
+}
+
+@media only screen and (max-width: 1201px) {
+	.dpc-schedule {
+		margin-top: 50px;
+		margin-left: 20px;
+		grid-template-columns: 1fr;
+		grid-row-gap: 30px;
+	}
+
+	.dpc-schedule .grid-title {
+		grid-row: initial;
+	}
+
+	.minor, .major {
+		grid-template-columns: repeat(4, 1fr);
+		grid-row-gap: 10px;
+		color: inherit;
+	}
+
+	.tournament-name {
+		grid-column: span 4;
+		font-size: 18px;
+	}
+
+	.major .tournament-name {
+		color: #00BFAD;
+	}
+}
+
+@media only screen and (max-width: 481px) {
+	.minor, .major {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 10px;
+		color: inherit;
+	}
+
+	.tournament-name {
+		grid-column: span 2;
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,394 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Schedule, standings and playoff brackets for DPC tournaments">
+	<meta name="keywords" content="Dota, Dota 2, Dotatime, DPC, The International">
+	<meta name="author" content="Mark Kuzmin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dotatime. Schedule, standings and brackets for DPC tournaments</title>
+	<link type="text/css" rel="stylesheet" href="main.css?v=1.71">
+	<link rel="icon" href="favicon.png">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Dotatime"/>
+	<meta property="og:description" content="Follow Dota majors and minors"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "//dotatime.pro" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600|Varela" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="jquery.bracket.min.js"></script>
+	<script type="text/javascript" src="moment-with-locales.js"></script>
+	<script type="text/javascript" src="js/dotascript.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<a href="dpc" class="active">DPC</a>
+				<!-- <img src="aegis.svg"> -->
+				<a href="ru" class="active">RU</a>
+			</nav>
+		</header>
+
+		<div class="tournament-header">
+			<h1>The Bucharest Minor</h1>
+
+			<div id="buttons">
+				<div class="schedule-buttons">
+					<h2>Groupstage</h2><br/>
+					<a href="#" id="1" class="today">9th</a>
+					<a href="#" id="2">10th</a>
+				</div>
+
+				<div class="schedule-buttons">
+					<h2>Playoff</h2><br/>
+					<a href="#" id="3">11th</a>
+					<a href="#" id="4">12th</a>
+					<a href="#" id="5">13th</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="title" lang="en">
+			<h2>Schedule.</h2>
+		</div>
+
+		<div id="pages">
+			<div id="schedule1" class="schedule">
+				<div class="streams" lang="en">
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+
+					<div class="schedule-match next">
+						<h3 class="cast"><div class="element"></div>Casters</h3>
+						<div>
+							<p><span class="teamname">Keen&nbsp;Gaming</span></p>
+							<p><span class="teamname">Ninjas&nbsp;in&nbsp;Pijamas</span></p>
+						</div>
+					</div>
+
+					<div class="schedule-match">
+						<h3 class="cast"><div class="element"></div>Casters</h3>
+						<div>
+							<p><span class="teamname">Gambit&nbsp;Esports</span></p>
+							<p><span class="teamname">TEAM&nbsp;TEAM</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p>Winner's match</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column ">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match ">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p>Loser's match</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p>Decider match</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule2" class="schedule">
+				<div class="streams" lang="en">
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+
+					<div class="schedule-match next">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p><span class="teamname">Playmakers&nbsp;Esports</span></p>
+							<p><span class="teamname">EHOME</span></p>
+						</div>
+					</div>
+
+					<div class="schedule-match">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p><span class="teamname">OG</span></p>
+							<p><span class="teamname">BOOM&nbsp;ID</span></p>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p>Winner's match</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column ">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match ">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p>Loser's match</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match">
+						<h3 class="cast">Casters</h3>
+						<div>
+							<p>Decider match</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="scoreboard">
+			<div id="standings">
+				<h2>Groupstage.</h2>
+				<p class="start-end">January 9—10th</p>
+			</div>
+
+			<div class="ties">
+			</div>
+
+			<div id="advance">
+				<!-- <div class="upperbracket ">Advance to<br/>the&nbsp;upper&nbsp;bracket</div>
+				<div class="loserbracket ">Advance to<br/>the&nbsp;lower&nbsp;bracket</div>
+				<div class="eliminated ">Eliminate</div> -->
+			</div>
+
+			<div>
+				<h3>Group A</h3>
+				<ul class="groups">
+					<li><span class="group-result">0:0</span><span class="teamname">Keen&nbsp;Gaming</span></li>
+					<li><span class="group-result">0:0</span><span class="teamname">Ninjas&nbsp;in&nbsp;Pijamas</span></li>
+					<li><span class="group-result">0:0</span><span class="teamname">Gambit&nbsp;Esports</span></li>
+					<li><span class="group-result">0:0</span><span class="teamname">TEAM&nbsp;TEAM</span></li>
+
+				</ul>
+			</div>
+
+			<div>
+				<h3>Group B</h3>
+				<ul class="groups">
+					<li><span class="group-result">0:0</span><span class="teamname">OG</span></li>
+					<li><span class="group-result">0:0</span><span class="teamname">EHOME</span></li>
+					<li><span class="group-result">0:0</span><span class="teamname">BOOM&nbsp;ID</span></li>
+					<li><span class="group-result">0:0</span><span class="teamname">Playmakers&nbsp;Esports</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<hr>
+
+		<div id="playoff">
+			<h2>Playoffs.</h2>
+			<p class="start-end">January 11–13th</p>
+		</div>
+
+		<div class="playoff"></div>
+
+		<footer>
+			<div>
+				<p>© 2018</p>
+			</div>
+
+			<div class="empty"></div>
+
+			<div class="empty"></div>
+
+			<div class="empty">
+			</div>
+
+			<div style="text-align: right;">
+				<a href="emailto:mark.kuzmin@gmail.com" class="">mark.kuzmin@gmail.com</a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123610317-1"></script>
+	<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-123610317-1');
+	</script>
+</body>
+
+<!-- Brackets -->
+<script>
+	var bigData = {
+	  teams : [
+	    ["", ""],
+	    ["", ""],
+	    ["", ""],
+	    ["", ""],
+
+	    ["", ""],
+	    ["", ""],
+	    ["", ""],
+	    ["", ""]
+	  ],
+	  results : [[ /* WINNER BRACKET */
+	    [[], [], [], [], [], [], [], []],
+	    [[], [], [], []],
+	    [[], []],
+	    [[]]
+	  ], [         /* LOSER BRACKET */
+	    [[], [], [], []],
+	    [[], [], [], []],
+	    [[], []],
+	    [[], []],
+	    [[]],
+	    [[]]
+	  ], [         /* FINALS */
+	    [[], []],
+	    [[]]
+	  ]]
+	}
+
+	$(function() {
+	    $('.playoff').bracket({
+	    	skipSecondaryFinal: true,
+	    	skipConsolationRound: true,
+	      	init: bigData})
+	})
+</script>
+
+<!-- hideResult -->
+<script>
+	$('.hideResult').click(function spoiler() {
+		$(this).css("display", "none");
+	});
+</script>
+
+<!-- allResults -->
+<script>
+	function allResults() {
+	    for (var i = 0; i < 1000; i++) {
+	    	var x = document.getElementsByClassName("hideResult");
+		        x[i].style.display = "none";
+		} 
+	}
+</script>
+
+<!-- Highlight Same Text -->
+<script>
+	$('body').on('mouseover', '.teamname', function() {
+		var textToMatch = $(this).text();
+
+		$('.teamname').each(function() {
+			var text = $(this).text();
+
+			if (textToMatch === text)
+				$(this).addClass('matching');
+		});
+	});
+
+	$('body').on('mouseout', '.teamname', function() {
+	    $('.matching').removeClass('matching');
+	});
+</script>
+
+<!-- timeZone -->
+<script>
+ 	var times = document.getElementsByClassName('time');
+
+ 	for (i = 0; i < 19; i++) {
+ 		if (i % 5 === 0) {
+ 			times[i].innerHTML = moment('2019-01-09T01:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 1) {
+ 			times[i].innerHTML = moment('2018-08-15T11:30-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 2) {
+ 			times[i].innerHTML = moment('2018-08-15T14:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 3) {
+ 			times[i].innerHTML = moment('2018-08-15T16:30-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 4) {
+ 			times[i].innerHTML = moment('2018-08-15T19:00-07:00').format('HH:mm');
+ 		}
+ 	}
+</script>
+
+<!-- Schedule Pages -->
+<script>
+	var id;
+
+	$("#buttons a").click(function() {
+	    $("a#" + id).css("font-weight", "400");
+	    $("a#" + id).css("color", "inherit");
+	    $("a#" + id).css("border-color", "inherit");
+
+	    id = $(this).attr("id");
+	    $("a#" + id).css("font-weight", "600");
+	    $("a#" + id).css("color", "#00BFAD");
+	    $("a#" + id).css("border-color", "#00BFAD");
+	    $("#pages > div").css("display", "none");
+	    $("#pages #schedule" + id).css("display", "grid");
+	});
+</script>
+</html>

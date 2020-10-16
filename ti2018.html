@@ -1,0 +1,1789 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Schedule, standings and playoff brackets for DPC tournaments">
+	<meta name="keywords" content="Dota, Dota 2, Dotatime, DPC, The International">
+	<meta name="author" content="Mark Kuzmin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dotatime. Schedule, standings and brackets for DPC tournaments</title>
+	<link type="text/css" rel="stylesheet" href="main.css?v=1.71">
+	<link rel="icon" href="favicon.png">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Dotatime"/>
+	<meta property="og:description" content="Follow Dota majors and minors"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "//dotatime.pro" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Varela" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="jquery.bracket.min.js"></script>
+	<script type="text/javascript" src="moment-with-locales.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<a href="dpc" class="active">DPC</a>
+				<!-- <img src="aegis.svg"> -->
+				<a href="ru" class="active">RU</a>
+			</nav>
+		</header>
+
+		<div class="tournament-header">
+			<h1 style="padding: 0; font-weight: 600">The International 2018</h1>
+
+			<div id="buttons">
+				<div class="schedule-buttons">
+					<h2>Groupstage</h2><br/>
+					<a href="#" id="1">15th</a>
+					<a href="#" id="2">16th</a>
+					<a href="#" id="3">17th</a>
+					<a href="#" id="4">18th</a>
+				</div>
+
+				<div class="schedule-buttons">
+					<h2>Playoff</h2><br/>
+					<a href="#" id="5">20th</a>
+					<a href="#" id="6">21st</a>
+					<a href="#" id="7">22nd</a>
+					<a href="#" id="8">23rd</a>
+					<a href="#" id="9">24th</a>
+					<a href="#" id="10" class="today">25th</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="title" lang="en">
+			<h2>Schedule.</h2>
+		</div>
+
+		<div id="pages">
+			<div id="schedule1" class="schedule">
+				<div class="streams" lang="en">
+					<h3>Day 1<br/>is finished.</h3>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Team&nbsp;Liquid</span>
+							<br/>
+							<span class="teamname">Fnatic</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">PSG.LGD</span>
+							<br/>
+							<span class="teamname">OG</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Evil&nbsp;Geniuses</span>
+							<br/>
+							<span class="teamname">VGJ.Thunder</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Invictus&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">Mineski</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Team&nbsp;Secret</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Serenity</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Virtus.pro</span>
+								<br/>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Vici&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">VGJ.Storm</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Newbee</span>
+							<br/>
+							<span class="teamname">TNC&nbsp;Predator</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">PSG.LGD</span>
+							<br/>
+							<span class="teamname">VGJ.Thunder</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Mineski</span>
+							<br/>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Invictus&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Evil&nbsp;Geniuses</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Team&nbsp;Liquid</span>
+							<br/>
+							<span class="teamname">OG</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Virtus.pro</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Serenity</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Vici&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">TNC&nbsp;Predator</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">paiN&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Newbee</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Team&nbsp;Secret</span>
+							<br/>
+							<span class="teamname">VGJ.Storm</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">PSG.LGD</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Liquid</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Evil&nbsp;Geniuses</span>
+							<br/>
+							<span class="teamname">Mineski</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Fnatic</span>
+							<br/>
+							<span class="teamname">VGJ.Thunder</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Invictus&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule2" class="schedule">
+				<div class="streams" lang="en">
+					<h3>Day 2<br />is finished.</h3>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Team&nbsp;Secret</span>
+							<br/>
+							<span class="teamname">Virtus.pro</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Vici&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">Newbee</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">VGJ.Storm</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">paiN&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">TNC&nbsp;Predator</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Fnatic</span>
+							<br/>
+							<span class="teamname">Mineski</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+								<br/>
+								<span class="teamname">OG</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Invictus&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Liquid</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">PSG.LGD</span>
+							<br/>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Vici&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Serenity</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Virtus.pro</span>
+							<br/>
+							<span class="teamname">TNC&nbsp;Predator</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Newbee</span>
+								<br/>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">paiN&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Secret</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">PSG.LGD</span>
+							<br/>
+							<span class="teamname">Evil&nbsp;Geniuses</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Invictus&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Fnatic</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">VGJ.Thunder</span>
+							<br/>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Mineski</span>
+							<br/>
+							<span class="teamname">OG</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Vici&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Secret</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Newbee</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Serenity</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">paiN&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">VGJ.Storm</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">TNC&nbsp;Predator</span>
+							<br/>
+							<span class="teamname">OpTic&nbsp;Gaming</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule3" class="schedule">
+				<div class="streams" lang="en">
+					<h3>Day 3<br />is finished.</h3>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Team&nbsp;Liquid</span>
+								<br/>
+								<span class="teamname">Mineski</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Fnatic</span>
+								<br/>
+								<span class="teamname">OG</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Invictus&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">VGJ.Thunder</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+								<br/>
+								<span class="teamname">Winstrike&nbsp;Team</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Newbee</span>
+							<br/>
+							<span class="teamname">Virtus.pro</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">OpTic&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Serenity</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">TNC&nbsp;Predator</span>
+								<br/>
+								<span class="teamname">VGJ.Storm</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">paiN&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Vici&nbsp;Gaming</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">Mineski</span>
+							<br/>
+							<span class="teamname">VGJ.Thunder</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">PSG.LGD</span>
+								<br/>
+								<span class="teamname">Fnatic</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Invictus&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">OG</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Team&nbsp;Liquid</span>
+							<br/>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Newbee</span>
+								<br/>
+								<span class="teamname">VGJ.Storm</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">TNC&nbsp;Predator</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Serenity</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Team&nbsp;Secret</span>
+								<br/>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">paiN&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Virtus.pro</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Liquid</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Invictus&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">PSG.LGD</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">OG</span>
+								<br/>
+								<span class="teamname">VGJ.Thunder</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+							<div>
+								<span class="teamname">Fnatic</span>
+								<br/>
+								<span class="teamname">Winstrike&nbsp;Team</span>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule4" class="schedule">
+				<div class="streams" lang="en">
+					<h3>Groupstage<br/>is finished.</h3>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Vici&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Virtus.pro</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">paiN&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">Team&nbsp;Serenity</span>
+							<br/>
+							<span class="teamname">VGJ.Storm</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Team&nbsp;Secret</span>
+							<br/>
+							<span class="teamname">TNC&nbsp;Predator</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">PSG.LGD</span>
+								<br/>
+								<span class="teamname">Mineski</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Team&nbsp;Liquid</span>
+								<br/>
+								<span class="teamname">VGJ.Thunder</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+								<br/>
+								<span class="teamname">Fnatic</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>1</div>
+						<div>
+							<span class="teamname">OG</span>
+							<br/>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Newbee</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Secret</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Virtus.pro</span>
+								<br/>
+								<span class="teamname">VGJ.Storm</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Vici&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+							</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">paiN&nbsp;Gaming</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Serenity</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">–<br/>–</div>
+						<div>
+							<span class="teamname">Team&nbsp;Secret</span>
+							<br/>
+							<span class="teamname">OpTic&nbsp;Gaming</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>1</div>
+						<div>
+							<span class="teamname">Newbee</span>
+							<br/>
+							<span class="teamname">OpTic&nbsp;Gaming</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>1</div>
+						<div>
+							<span class="teamname">Newbee</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Secret</span>
+						</div>
+					</div>
+
+					<div class="schedule-match played">
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Winstrike&nbsp;Team</span>
+							<br/>
+							<span class="teamname">Invictus&nbsp;Gaming</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule5" class="schedule-playoff">
+				<div class="streams" lang="en">
+					<a href="https://twitch.tv/dota2ti" target="_blank" class="">
+						<p>twitch.tv/dota2ti</p>
+						<h3>Upper Bracket, bo3</h3>
+					</a>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Toby & Synderen</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Team&nbsp;Liquid</span>
+								<br/>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Lyrical & Trent</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Virtus.pro</span>
+								<br/>
+								<span class="teamname">PSG.LGD</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="empty">
+				</div>
+
+				<div class="empty">
+				</div>
+
+				<div class="streams" lang="en">
+					<a href="https://twitch.tv/dota2ti" target="_blank" class="">
+						<p>twitch.tv/dota2ti</p>
+						<h3>Lower Bracket, bo1</h3>
+					</a>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Capitalist & Blitz</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>1</div>
+							<div>
+								<span class="teamname">Fnatic</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Serenity</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Capitalist & Blitz</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>1</div>
+							<div>
+								<span class="teamname">TNC&nbsp;Predator</span>
+								<br/>
+								<span class="teamname">Mineski</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">ODPixel & Fogged</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>1</div>
+							<div>
+								<span class="teamname">Newbee</span>
+								<br/>
+								<span class="teamname">Winstrike&nbsp;Team</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">ODPixel & Fogged</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>1</div>
+							<div>
+								<span class="teamname">VGJ.Thunder</span>
+								<br/>
+								<span class="teamname">Vici&nbsp;Gaming</span>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule6" class="schedule-playoff">
+				<div class="streams" lang="en">
+					<a href="https://twitch.tv/dota2ti" target="_blank">
+						<p>twitch.tv/dota2ti</p>
+						<h3>Best of 3</h3>
+					</a>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Lyrical & Trent</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+						<div>
+							<span class="teamname">VGJ.Storm</span>
+							<br/>
+							<span class="teamname">OG</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Toby & Synderen</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Secret</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">ODPixel & Fogged</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Serenity</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Capitalist & Blitz</h3>
+						<div class="hideResult " onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Virtus.pro</span>
+							<br/>
+							<span class="teamname">Mineski</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule7" class="schedule-playoff">
+				<div class="streams" lang="en">
+					<a href="https://twitch.tv/dota2ti" target="_blank">
+						<p>twitch.tv/dota2ti</p>
+						<h3>Best of 3</h3>
+					</a>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Lyrical & Trent</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">VGJ.Storm</span>
+								<br/>
+								<span class="teamname">Winstrike&nbsp;Team</span>
+							</div>
+						</a>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Toby & Synderen</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>1</div>
+							<div>
+								<span class="teamname">Team&nbsp;Secret</span>
+								<br/>
+								<span class="teamname">Vici&nbsp;Gaming</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Capitalist & Blitz</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">Team&nbsp;Liquid</span>
+								<br/>
+								<span class="teamname">PSG.LGD</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">ODPixel & Fogged</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>1</div>
+							<div>
+								<span class="teamname">OG</span>
+								<br/>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule8" class="schedule-playoff">
+				<div class="streams" lang="en">
+					<a href="https://twitch.tv/dota2ti" target="_blank">
+						<p>twitch.tv/dota2ti</p>
+						<h3>Best of 3</h3>
+					</a>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Toby & Synderen</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>2</div>
+							<div>
+								<span class="teamname">OpTic&nbsp;Gaming</span>
+								<br/>
+								<span class="teamname">Virtus.pro</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Capitalist & Blitz</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">0<br/>2</div>
+							<div>
+								<span class="teamname">VGJ.Storm</span>
+								<br/>
+								<span class="teamname">Team&nbsp;Secret</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">ODPixel & Fogged</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+							<div>
+								<span class="teamname">Evil&nbsp;Geniuses</span>
+								<br/>
+								<span class="teamname">Virtus.pro</span>
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule9" class="schedule-playoff">
+				<div class="streams" lang="en">
+					<a href="https://twitch.tv/dota2ti" target="_blank">
+						<p>twitch.tv/dota2ti</p>
+						<h3>Best of 3</h3>
+					</a>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Lyrical & Trent</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Team&nbsp;Liquid</span>
+							<br/>
+							<span class="teamname">Team&nbsp;Secret</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Toby & Synderen</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">1<br/>2</div>
+							<div>
+								<span class="teamname">PSG.LGD</span>
+								<br/>
+								<span class="teamname">OG</span>
+							</div>
+					</div>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time">–</h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Capitalist & Blitz</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">Evil&nbsp;Geniuses</span>
+							<br/>
+							<span class="teamname">Liquid / Secret</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="schedule10" class="schedule-playoff">
+				<div class="streams" lang="en">
+					<h3>What<br/>a final!</h3>
+				</div>
+
+				<div class="schedule-column played">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match played">
+						<h3 class="cast">Lyrical & Trent</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">2<br/>0</div>
+						<div>
+							<span class="teamname">PSG.LGD</span>
+							<br/>
+							<span class="teamname">Evil&nbsp;Geniuses</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="schedule-column">
+					<div class="time-span">
+						<h3 class="time"></h3>
+					</div>
+
+					<div class="schedule-match next">
+						<h3 class="cast"><div class="element"></div>ODPixel & Fogged</h3>
+						<div class="hideResult" onclick="spoiler()">?<br/>?</div>
+						<div class="showResult">3<br/>2</div>
+							<div>
+								<span class="teamname">OG</span>
+								<br/>
+								<span class="teamname">PSG.LGD</span>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="info">
+			<div class="allResults" onclick="allResults()">Show all results</div>
+		</div>
+
+		<div id="scoreboard">
+			<div id="standings">
+				<h2>Groupstage.</h2>
+				<p class="start-end">August 15—18th</p>
+			</div>
+
+			<div class="ties">
+				<h3>Tiebreakers.</h3>
+				<p>If there is a&nbsp;tie along the&nbsp;Upper and&nbsp;Lower Bracket or Lower Bracket and&nbsp;elimination divider, an&nbsp;additional set of&nbsp;games will be played.</p>
+
+				<h3>Other ties.</h3>
+				<ol>
+					<li>Head to head results.</li>
+					<li>Results against lower seeded teams.</li>
+					<li>If a tie can be broken along the way, the&nbsp;process is restarted back.</li>
+					<li>Coin toss.</li>
+				</ol>
+			</div>
+
+			<div id="advance">
+				<div class="upperbracket ">Advance to<br/>the&nbsp;upper&nbsp;bracket</div>
+				<div class="loserbracket ">Advance to<br/>the&nbsp;lower&nbsp;bracket</div>
+				<div class="eliminated ">Eliminate</div>
+			</div>
+
+			<div>
+				<h3>Group A</h3>
+				<ul class="groups">
+					<li><span class="group-result">13:3</span><span class="teamname">Team&nbsp;Liquid</span></li>
+					<li><span class="group-result">13:3</span><span class="teamname">Evil&nbsp;Geniuses</span></li>
+					<li><span class="group-result">11:5</span><span class="teamname">PSG.LGD</span></li>
+					<li><span class="group-result">9:7</span><span class="teamname">OG</span></li>
+					<li><span class="group-result">7:9</span><span class="teamname">Fnatic</span></li>
+					<li><span class="group-result">6:10</span><span class="teamname">VGJ.Thunder</span></li>
+					<li><span class="group-result">5:11</span><span class="teamname">Mineski</span></li>
+					<li><span class="group-result">4:12</span><span class="teamname">Winstrike&nbsp;Team</span></li>
+					<li><span class="group-result">4:12</span><span class="teamname">Invictus&nbsp;Gaming</span></li>
+
+				</ul>
+			</div>
+
+			<div>
+				<h3>Group B</h3>
+				<ul class="groups">
+					<li><span class="group-result">12:4</span><span class="teamname">VGJ.Storm</span></li>
+					<li><span class="group-result">10:6</span><span class="teamname">Virtus.pro</span></li>
+					<li><span class="group-result">8:8</span><span class="teamname">Team&nbsp;Secret</span></li>
+					<li><span class="group-result">8:8</span><span class="teamname">OpTic&nbsp;Gaming</span></li>
+					<li><span class="group-result">8:8</span><span class="teamname">Newbee</span></li>
+					<li><span class="group-result">7:9</span><span class="teamname">TNC&nbsp;Predator</span></li>
+					<li><span class="group-result">7:9</span><span class="teamname">Team&nbsp;Serenity</span></li>
+					<li><span class="group-result">7:9</span><span class="teamname">Vici&nbsp;Gaming</span></li>
+					<li><span class="group-result">5:11</span><span class="teamname">paiN&nbsp;Gaming</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="playoff-schedule-upper">
+		</div>
+
+		<div id="playoff">
+			<h2>Playoffs.</h2>
+			<p class="start-end">August 20–25th</p>
+		</div>
+
+		<div class="playoff"></div>
+
+		<!-- <div class="ti-results">
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$11 234 158</p>
+				<p class="ti-results-place">Winner</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team-winner">OG</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$4 085 148</p>
+				<p class="ti-results-place">Runner-up</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team">PSG.LGD</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$2 680 879</p>
+				<p class="ti-results-place">Third Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team">Evil Geniuses</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$1 787 252</p>
+				<p class="ti-results-place">Fourth Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team">Team Liquid</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$1 148 948</p>
+				<p class="ti-results-place">5—6th Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team-middle">Virtus.pro</p>
+				<p class="ti-results-team-middle">Team Secret</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$638 304</p>
+				<p class="ti-results-place">7—8th Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team-middle">OpTic Gaming</p>
+				<p class="ti-results-team-middle">VGJ.Storm</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$382 983</p>
+				<p class="ti-results-place">9—12th Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team-lower">Serenity</p>
+				<p class="ti-results-team-lower">Mineski</p>
+				<p class="ti-results-team-lower">Winstrike</p>
+				<p class="ti-results-team-lower">Vici&nbsp;Gaming</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$127 661</p>
+				<p class="ti-results-place">13—16th Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team-lower">Fnatic</p>
+				<p class="ti-results-team-lower">TNC</p>
+				<p class="ti-results-team-lower">Newbee</p>
+				<p class="ti-results-team-lower">VGJ.Thunder</p>
+			</div>
+
+
+
+			<div class="ti-results-block">
+				<p class="ti-results-prize">$63 830</p>
+				<p class="ti-results-place">17—18th Place</p>
+			</div>
+
+			<div class="ti-results-row">
+				<p class="ti-results-team-lower">Invictus Gaming</p>
+				<p class="ti-results-team-lower">paiN Gaming</p>
+			</div>
+		</div> -->
+
+		<footer>
+			<div>
+				<p>© 2018</p>
+			</div>
+
+			<div class="empty"></div>
+
+			<div class="empty"></div>
+
+			<div class="empty"></div>
+
+			<div style="text-align: right;">
+				<a href="emailto:mark.kuzmin@gmail.com" class="">mark.kuzmin@gmail.com</a>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123610317-1"></script>
+	<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-123610317-1');
+	</script>
+</body>
+
+<!-- Brackets -->
+<script>
+	var bigData = {
+	  teams : [
+	    ["Team Liquid",  "Fnatic" ],
+	    ["OpTic Gaming",  "Team Serenity" ],
+	    ["Virtus.pro",  "TNC Predator" ],
+	    ["PSG.LGD",  "Mineski" ],
+
+	    ["VGJ.Storm",  "Newbee"],
+	    ["OG", "Winstrike Team"],
+	    ["Evil Geniuses", "VGJ.Thunder"],
+	    ["Team Secret", "Vici Gaming"]
+	  ],
+	  results : [[ /* WINNER BRACKET */
+	    [[2,0], [2,0], [2,0], [2,0], [2,0], [2,0], [2,0], [2,0]],
+	    [[2,0], [0,2], [0,2], [2,0]],
+	    [[0,2], [2,1]],
+	    [[1,2]]
+	  ], [         /* LOSER BRACKET */
+	    [[0,1], [0,1], [0,1], [0,1]],
+	    [[0,2], [0,2], [0,2], [1,2]],
+	    [[1,2], [0,2]],
+	    [[0,2], [0,2]],
+	    [[2,0]],
+	    [[0,2]]
+	  ], [         /* FINALS */
+	    [[3,2], []],
+	    [[]]
+	  ]]
+	}
+
+	$(function() {
+	    $('.playoff').bracket({
+	    	skipSecondaryFinal: true,
+	    	skipConsolationRound: true,
+	      	init: bigData})
+	})
+</script>
+
+<!-- hideResult -->
+<script>
+	$('.hideResult').click(function spoiler() {
+		$(this).css("display", "none");
+	});
+</script>
+
+<!-- allResults -->
+<script>
+	function allResults() {
+	    for (var i = 0; i < 1000; i++) {
+	    	var x = document.getElementsByClassName("hideResult");
+		        x[i].style.display = "none";
+		} 
+	}
+</script>
+
+<!-- Highlight Same Text -->
+<script>
+	$('body').on('mouseover', '.teamname', function() {
+		var textToMatch = $(this).text();
+
+		$('.teamname').each(function() {
+			var text = $(this).text();
+
+			if (textToMatch === text)
+				$(this).addClass('matching');
+		});
+	});
+
+	$('body').on('mouseout', '.teamname', function() {
+	    $('.matching').removeClass('matching');
+	});
+</script>
+
+<!-- timeZone -->
+<script>
+ 	var times = document.getElementsByClassName('time');
+
+ 	for (i = 0; i < 19; i++) {
+ 		if (i % 5 === 0) {
+ 			times[i].innerHTML = moment('2018-08-15T09:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 1) {
+ 			times[i].innerHTML = moment('2018-08-15T11:30-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 2) {
+ 			times[i].innerHTML = moment('2018-08-15T14:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 3) {
+ 			times[i].innerHTML = moment('2018-08-15T16:30-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 5 === 4) {
+ 			times[i].innerHTML = moment('2018-08-15T19:00-07:00').format('HH:mm');
+ 		}
+ 	}
+
+ 	var times2 = document.getElementById('schedule5').getElementsByClassName('time');
+
+ 	for (i = 0; i < times2.length; i++) {
+ 		if (i % 6 === 0) {
+ 			times2[i].innerHTML = moment('2018-08-20T10:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 6 === 1) {
+ 			times2[i].innerHTML = moment('2018-08-20T13:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 6 === 2) {
+ 			times2[i].innerHTML = moment('2018-08-20T16:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 6 === 3) {
+ 			times2[i].innerHTML = moment('2018-08-20T17:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 6 === 4) {
+ 			times2[i].innerHTML = moment('2018-08-20T18:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 6 === 5) {
+ 			times2[i].innerHTML = moment('2018-08-20T19:00-07:00').format('HH:mm');
+ 		}
+ 	}
+
+ 	var times3 = document.getElementById('schedule10').getElementsByClassName('time');
+
+ 	for (i = 0; i < times3.length; i++) {
+ 		if (i % 4 === 0) {
+ 			times3[i].innerHTML = moment('2018-08-20T10:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 4 === 1) {
+ 			times3[i].innerHTML = moment('2018-08-20T14:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 4 === 2) {
+ 			times3[i].innerHTML = moment('2018-08-20T16:00-07:00').format('HH:mm');
+ 		}
+
+ 		if (i % 4 === 3) {
+ 			times3[i].innerHTML = moment('2018-08-20T19:00-07:00').format('HH:mm');
+ 		}
+ 	}
+</script>
+
+<!-- Schedule Pages -->
+<script>
+	var id;
+
+	$("#buttons a").click(function() {
+	    $("a#" + id).css("font-weight", "400");
+	    $("a#" + id).css("color", "inherit");
+	    $("a#" + id).css("border-color", "inherit");
+
+	    id = $(this).attr("id");
+	    $("a#" + id).css("font-weight", "600");
+	    $("a#" + id).css("color", "#00BFAD");
+	    $("a#" + id).css("border-color", "#00BFAD");
+	    $("#pages > div").css("display", "none");
+	    $("#pages #schedule" + id).css("display", "grid");
+	});
+</script>
+</html>

@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Schedule, standings and playoff brackets for DPC tournaments">
+	<meta name="keywords" content="Dota, Dota 2, Dotatime, DPC, The International">
+	<meta name="author" content="Mark Kuzmin">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dotatime. DPC Season 1</title>
+	<link type="text/css" rel="stylesheet" href="../main.css?v=1.71">
+	<link type="text/css" rel="stylesheet" href="dpc.css?v=1.1">
+	<link rel="icon" href="../favicon.png">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Dotatime"/>
+	<meta property="og:description" content="Follow Dota majors and minors"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content= "//dotatime.pro" />
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800|Varela" rel="stylesheet">
+
+	<!-- jQuery -->
+	<script type="text/javascript" src="../jquery-3.3.1.min.js"></script>
+</head>
+
+<body>	
+	<div class="wrapper">
+		<header>
+			<h1>Dota Pro Circuit</h1>
+			<img>
+
+			<nav>
+				<a href="../" class="active">BACK</a>
+			</nav>
+		</header>
+	
+		<!-- <div class="dpc-points" lang="en">
+				<div class="grid-title"><h2>Points.</h2></div>
+
+				<div><span class="teamname qualified">Virtus.pro</span><br/><span class="first-place">12372</span></div>
+				<div><span class="teamname qualified">Team&nbsp;Liquid</span><br/><span class="first-place">9459</span></div>
+				<div><span class="teamname qualified">PSG.LGD</span><br/><span class="first-place">7332</span></div>
+				<div><span class="teamname qualified">Team&nbsp;Secret</span><br/><span class="first-place">5136</span></div>
+
+				<div><span class="teamname qualified">Mineski</span><br/><span class="first-place">3150</span></div>
+				<div><span class="teamname qualified">Vici&nbsp;Gaming</span><br/><span class="first-place">2835</span></div>
+				<div><span class="teamname qualified">Newbee</span><br/><span class="first-place">2445</span></div>
+				<div><span class="teamname qualified">VGJ.Thunder</span><br/><span class="first-place">1935</span></div>
+		</div> -->
+		
+		<!-- <div class="dpc-schedule">
+			<div class="grid-title"><h2>Season 2.</h2></div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>The International 2019</h3><p>August</p></div>
+				<div><h3>Shanghai</h3></div>
+			</div>
+		</div> -->
+
+		<div class="dpc-schedule">
+			<div class="grid-title"><h2>Season 1.</h2></div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>StarLadder i-League</h3><p>Oct 11—15</p></div>
+				<div><h3>Team&nbsp;Liquid</h3><p>150 Points</p></div>
+				<div><h3>Mineski</h3><p>90 Points</p></div>
+				<div><h3>compLexity</h3><p>30 Points</p></div>
+				<div><h3>Team&nbsp;Secret</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>PGL Open Bucharest</h3><p>Oct 19—22</p></div>
+				<div><h3>Mineski</h3><p>150 Points</p></div>
+				<div><h3>PSG.LGD</h3><p>90 Points</p></div>
+				<div><h3>Immortals</h3><p>30 Points</p></div>
+				<div><h3>Evil&nbsp;Geniuses</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>ESL One Hamburg</h3><p>Oct 26—29</p></div>
+				<div><h3>Virtus.pro</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">Team&nbsp;Secret</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Team&nbsp;Liquid</h3><p>150 Points</p></div>
+				<div><h3 class="third-place">Newbee</h3><p>150 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>DotaPIT League</h3><p>Nov 2—5</p></div>
+				<div><h3>Team&nbsp;Liquid</h3><p>150 Points</p></div>
+				<div><h3>Vici&nbsp;Gaming</h3><p>90 Points</p></div>
+				<div><h3>Newbee</h3><p>30 Points</p></div>
+				<div><h3>Virtus.pro</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>Perfect World Masters</h3><p>Nov 20—26</p></div>
+				<div><h3>Newbee</h3><p>150 Points</p></div>
+				<div><h3>Vici&nbsp;Gaming</h3><p>90 Points</p></div>
+				<div><h3>LGD.FY</h3><p>45 Points</p></div>
+				<div><h3>compLexity</h3><p>15 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>DreamLeague 8</h3><p>Dec 1—3</p></div>
+				<div><h3>Team&nbsp;Secret</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">Team&nbsp;Liquid</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Evil&nbsp;Geniuses</h3><p>225 Points</p></div>
+				<div><h3 class="fourth-place">Natus&nbsp;Vincere</h3><p>75 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>MDL Macau</h3><p>Dec 8—10</p></div>
+				<div><h3>OG</h3><p>150 Points</p></div>
+				<div><h3>TNC&nbsp;Predator</h3><p>90 Points</p></div>
+				<div><h3>Natus&nbsp;Vincere</h3><p>30 Points</p></div>
+				<div><h3>Virtus.pro</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>Dota Summit 8</h3><p>Dec 13—17</p></div>
+				<div><h3>Virtus.pro</h3><p>150 Points</p></div>
+				<div><h3>Fnatic</h3><p>90 Points</p></div>
+				<div><h3>OG</h3><p>30 Points</p></div>
+				<div><h3>Team&nbsp;Kinguin</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>Captains Draft 4.0</h3><p>Jan 4—7</p></div>
+				<div><h3>Team&nbsp;Secret</h3><p>150 Points</p></div>
+				<div><h3>Vici&nbsp;Gaming</h3><p>90 Points</p></div>
+				<div><h3>Mineski</h3><p>30 Points</p></div>
+				<div><h3>OG</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>ESL One Genting</h3><p>Jan 23—28</p></div>
+				<div><h3>Newbee</h3><p>200 Points</p></div>
+				<div><h3>Team&nbsp;Liquid</h3><p>120 Points</p></div>
+				<div><h3>Team&nbsp;Secret</h3><p>40 Points</p></div>
+				<div><h3>Evil&nbsp;Geniuses</h3><p>40 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>Starladder i-League</h3><p>Feb 1—4</p></div>
+				<div><h3>Team&nbsp;Liquid</h3><p>150 Points</p></div>
+				<div><h3>PSG.LGD</h3><p>90 Points</p></div>
+				<div><h3>Newbee</h3><p>30 Points</p></div>
+				<div><h3>Mineski</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>ESL One Katowice</h3><p>Feb 20—25</p></div>
+				<div><h3>Virtus.pro</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">Vici&nbsp;Gaming</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Team&nbsp;Liquid</h3><p>225 Points</p></div>
+				<div><h3 class="fourth-place">Fnatic</h3><p>75 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>The Bucharest Major</h3><p>Mar 4—11</p></div>
+				<div><h3>Virtus.pro</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">VGJ.Thunder</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Newbee</h3><p>150 Points</p></div>
+				<div><h3 class="third-place">Team&nbsp;Liquid</h3><p>150 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>GESC: Indonesia</h3><p>Mar 15—18</p></div>
+				<div><h3>Evil&nbsp;Geniuses</h3><p>150 Points</p></div>
+				<div><h3>VGJ.Thunder</h3><p>90 Points</p></div>
+				<div><h3>Natus&nbsp;Vincere</h3><p>30 Points</p></div>
+				<div><h3>Infamous</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>DreamLeague Season 9</h3><p>Mar 21—25</p></div>
+				<div><h3>Team&nbsp;Secret</h3><p>150 Points</p></div>
+				<div><h3>Fnatic</h3><p>90 Points</p></div>
+				<div><h3>Team&nbsp;Liquid</h3><p>30 Points</p></div>
+				<div><h3>Newbee</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>DAC 2018</h3><p>Mar 29—Apr 7</p></div>
+				<div><h3>Mineski</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">PSG.LGD</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Virtus.pro</h3><p>225 Points</p></div>
+				<div><h3 class="fourth-place">TNC&nbsp;Predator</h3><p>75 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>Starladder ImbaTV</h3><p>Apr 12—15</p></div>
+				<div><h3>OpTic&nbsp;Gaming</h3><p>150 Points</p></div>
+				<div><h3>VGJ.Thunder</h3><p>90 Points</p></div>
+				<div><h3>Vega&nbsp;Squadron</h3><p>30 Points</p></div>
+				<div><h3>Fnatic</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>Epicenter XL</h3><p>Apr 27—May 6</p></div>
+				<div><h3>PSG.LGD</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">Team&nbsp;Liquid</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Winstrike&nbsp;Team</h3><p>225 Points</p></div>
+				<div><h3 class="fourth-place">Virtus.pro</h3><p>75 Points</p></div>
+			</div>
+
+			<div class="minor">
+				<div class="tournament-name"><h3>GESC: Thailand</h3><p>May 9—12</p></div>
+				<div><h3>VGJ.Storm</h3><p>150 Points</p></div>
+				<div><h3>Keen&nbsp;Gaming</h3><p>90 Points</p></div>
+				<div><h3>Team&nbsp;Secret</h3><p>30 Points</p></div>
+				<div><h3>Fnatic</h3><p>30 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>MDL Changsha Major</h3><p>May 14—20</p></div>
+				<div><h3>PSG.LGD</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">VGJ.Storm</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">Vici&nbsp;Gaming</h3><p>225 Points</p></div>
+				<div><h3 class="fourth-place">Newbee</h3><p>75 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>ESL One Birmingham</h3><p>May 23—27</p></div>
+				<div><h3>Virtus.pro</h3><p>750 Points</p></div>
+				<div><h3 class="second-place">OpTic&nbsp;Gaming</h3><p>450 Points</p></div>
+				<div><h3 class="third-place">paiN&nbsp;Gaming</h3><p>225 Points</p></div>
+				<div><h3 class="fourth-place">Fnatic</h3><p>75 Points</p></div>
+			</div>
+
+			<div class="major">
+				<div class="tournament-name"><h3>Dota2 Supermajor</h3><p>Jun 2—10</p></div>
+				<div><h3>Team&nbsp;Liquid</h3><p>1125 Points</p></div>
+				<div><h3 class="second-place">Virtus.pro</h3><p>675 Points</p></div>
+				<div><h3 class="third-place">PSG.LGD</h3><p>337 Points</p></div>
+				<div><h3 class="fourth-place">Team&nbsp;Secret</h3><p>112 Points</p></div>
+			</div>
+		</div>
+
+		<!--
+		<footer>
+			<div>
+				<p>© 2018</p>
+			</div>
+
+			<div class="empty"></div>
+
+			<div class="empty"></div>
+
+			<div class="empty"></div>
+
+			<div style="text-align: right;">
+				<a href="emailto:mark.kuzmin@gmail.com" class="day">mark.kuzmin@gmail.com</a>
+			</div>
+		</footer>
+		-->
+
+	</div>
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-123610317-1"></script>
+	<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-123610317-1');
+	</script>
+</body>
+
+<!-- Highlight Same Text -->
+<script>
+	$('body').on('mouseover', '.teamname', function() {
+		var textToMatch = $(this).text();
+
+		$('.teamname').each(function() {
+			var text = $(this).text();
+
+			if (textToMatch === text)
+				$(this).addClass('matching');
+		});
+	});
+
+	$('body').on('mouseout', '.teamname', function() {
+	    $('.matching').removeClass('matching');
+	});
+</script>
+</html>
